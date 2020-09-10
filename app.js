@@ -16,7 +16,7 @@ app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
 
 // Mongo URI
-const mongoURI = 'mongodb://localhost:27017/upload-server';
+const mongoURI = process.env.MONGODB_URL;
 
 // Create mongo connection
 const conn = mongoose.createConnection(mongoURI);

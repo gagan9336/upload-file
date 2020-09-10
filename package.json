@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "env-cmd -f ./config/dev.env nodemon app.js"
   },
   "author": "Gagan",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "multer-gridfs-storage": "^3.0.0"
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "nodemon": "^1.17.1"
   }
 }
