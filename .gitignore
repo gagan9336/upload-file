@@ -1,3 +1,2 @@
 node_modules
 config
-mongodb+srv://gagan:gagandeep@cluster0.9oluq.mongodb.net/upload-server?retryWrites=true&w=majority
