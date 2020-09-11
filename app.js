@@ -9,6 +9,7 @@ const Grid = require('gridfs-stream');
 const methodOverride = require('method-override');
 
 const app = express();
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(bodyParser.json());
@@ -175,7 +176,5 @@ app.delete('/files/:id', (req, res) => {
     res.redirect('/');
   });
 });
-
-const port = 5000;
 
 app.listen(port, () => console.log(`Server started on port ${port}`));

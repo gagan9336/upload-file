@@ -11,8 +11,6 @@
         body {
             font: 16px Arial;
         }
-
-        /*the container must be positioned relative:*/
         .autocomplete {
             position: relative;
             display: inline-block;
@@ -42,7 +40,6 @@
             border-bottom: none;
             border-top: none;
             z-index: 99;
-            /*position the autocomplete items to be the same width as the container:*/
             top: 100%;
             left: 0;
             right: 0;
@@ -55,12 +52,11 @@
             border-bottom: 1px solid #d4d4d4;
         }
 
-        /*when hovering an item:*/
         .autocomplete-items div:hover {
             background-color: #e9e9e9;
         }
 
-        /*when navigating through the items using the arrow keys:*/
+
         .autocomplete-active {
             background-color: DodgerBlue !important;
             color: #ffffff;
@@ -69,8 +65,7 @@
 </head>
 
 <body>
-
-    <!--Make sure the form has the autocomplete function switched off:-->
+    //for form:- not in action but i have code for country array.
     <form action="/" method="POST" autocomplete="off">
         <div class="form-group">
             <input class="form-control" type="text" name="name" placeholder="name">
